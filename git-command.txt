@@ -1,0 +1,35 @@
+git :dearer git
+git init:creer un fichier .git dans le repertoir de base
+git status
+touch: creer un fichier
+mkdir:	creer un dossier
+index de git: liste de tous les fichier en memoire de git
+git add fichier:rajouter un fichier a l'index
+git add. ca rajoute tout les fichier
+git commit -m "message" ajouter dans le fichier git
+git log: voire l'historique des modificaion
+pour identifier un commit il faut le shat commit ......
+git commit -a -m "message" ou -am	:le -a signifie tout les fichier deja ans l'index rajoute les a nouveau si modification, si on utilise cette comande plus besoin de faire git add fichier
+git checkout shat_du_commit
+git checkout master:d revenir au dernier commit
+git clone url http.... :recuperer un git, attention ca reer un fichier
+git remote add nom url:sur un autre ordinateur, ou git, nom en fonction du lieu
+git push lieu branche: on remet les modification
+git pull lieu branche:recupere le code depuis le repository
+git branch: la branche sur laquelle on est, par defaut =master
+git branch nom_nouvelle: creation de nouvelle branche
+git checkout nom_branche: on change de branche
+git checkout -b nom_nouvelle: on creer une autre branche et on se met deçu
+git merge branche_ : ca va merge de branche_ dans la branche dans lquelle on se situe
+git branch -d branche: supprime un branche localement
+en remote pour effacer une branche apres fusionnement si necessaire:
+git push origin --delete "branchName"
+git push origin :"branchName"
+git rm file: delete file from folder
+git rm --cached [file]: delete file from index
+lors d'un conflit ->editeur de texte et on resolu le conflits et puis on add et comit mais dans le commit pas de message ->:x pour sauvegarder
+git blame file: montre qui a modifié le fichier
+git show shat_de_blame: montre les modification, +monte,- diminue
+lorsqu'on travail dans un fichier et on doit passer a une autre branche:
+git stash : on va sauver les modification 
+git stash pop: on recupere les modification et on peut donc reprendre la ou on etait et on peut finir le commit, il faut etre dans la bonne branche
